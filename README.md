@@ -1,3 +1,7 @@
+# plaid- with -django - celery
+go to : https://github.com/brahada/plaid-example/tree/master/plaid-django-celery
+
+
 # plaid-example- without - django
 pip install -r requirements.txt
 
@@ -13,5 +17,3 @@ python server.py
 
 open http://localhost:8000
 
-#plaid- with -django - celery
-go to :
