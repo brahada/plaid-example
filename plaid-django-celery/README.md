@@ -15,7 +15,7 @@
 
 # Setting Up
 
-Clone the project on your system:
+Clone the project on your system.
 
 
 ## Setting Database
