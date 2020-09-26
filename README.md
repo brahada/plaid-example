@@ -12,3 +12,6 @@ PLAID_ENV=sandbox \
 python server.py
 
 open http://localhost:8000
+
+#plaid- with -django - celery
+go to :
