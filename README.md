@@ -1,11 +1,11 @@
-# plaid- with -django - celery
+## plaid- with -django - celery
 go to : https://github.com/brahada/plaid-example/tree/master/plaid-django-celery
 
 
-# plaid-example- without - django
+## plaid-example- without - django
 pip install -r requirements.txt
 
-# keys
+### keys
 (fill for ? by going to sandbox sit : https://dashboard.plaid.com/overview/sandbox)
 
 PLAID_CLIENT_ID=? \
