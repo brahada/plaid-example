@@ -1,46 +1,4 @@
-# Images for better Visualization of project
 
-**Signup Page**
-
-![](images/Signup.png)
-
-**Login Page**
-
-![](images/Login.png)
-
-**HomePage**
-
-![](images/Home.png)
-
-**Select Bank**
-
-![](images/SelectBank.png)
-
-**Verify Bank Details**
-
-![](images/VerifyDetails.png)
-
-**Bank Added Successfully**
-
-![](images/BankSuccess.png)
-
-**HomePage When Bank Added**
-
-![](images/HomeWhenBankAdded.png)
-
-**Last 2 Years Transaction**
-
-![](images/TransactionsOf2Years.png)
-
-**Account Balance Info**
-
-![](images/AccountBalance.png)
-
-**Other Infos**
-
-![](images/OtherInfos.png)
-
-# Setting Up the project with Plaid and Django Rest Framework
 
 # Django Assignment
 
@@ -57,40 +15,10 @@
 
 # Setting Up
 
-Clone the project on your system:
+Clone the project on your system.
 
-    $ git clone https://github.com/Sanjit-Prasad/DjangoAssignment.git
-    $ cd DjangoAssignment
 
 ## Setting Database
-
-You need to set up the database for the project. We are using CloudSQL here for production but you are free to use any DataBase of your choice.
-
-These are the steps for setting up CloudSQL. You may skip it if you want to use local DataBase instead. Before you can connect a mysql to a Cloud SQL instance, you must have:
-
-* Created a Cloud SQL instance, including configuring the default user.
-
-  * For more information about creating instances, see [Creating Instances](https://cloud.google.com/sql/docs/mysql/create-instance).
-
-  * For more information about configuring the default user, see [Configuring the default user account](https://cloud.google.com/sql/docs/mysql/create-manage-users#user-root).
-
-* Determined how you will connect to your instance.
-
-  * For information about the available connection options and how to choose between them, see [Connection Options for External Applications](https://cloud.google.com/sql/docs/mysql/external-connection-methods).
-    
-* Installed the [mysql client](https://dev.mysql.com/downloads/mysql/).
-
-* [Enable](https://console.cloud.google.com/flows/enableapi?apiid=sqladmin) the Cloud SQL Admin API.
-
-Finally install the proxy and run:
-
-    $ wget https://dl.google.com/cloudsql/cloud_sql_proxy.linux.amd64 -O cloud_sql_proxy
-    $ chmod +x cloud_sql_proxy
-    $ ./cloud_sql_proxy -instances=<INSTANCE_CONNECTION_NAME>=tcp:3306
-
-In case there is some issue, you can find a detailed set up guide [here](https://cloud.google.com/sql/docs/mysql/connect-admin-proxy).
-
-If you want to use DataBase from your system only. You are free to choose sqlite (by default), [mysql](https://dev.mysql.com/downloads/mysql/) or any other database. You will need to change the `settings.py` accordingly.
 
 For sqlite:
 
@@ -144,6 +72,8 @@ Let the new virtual environment be `env`. You need to add your secret keys to th
 
     export PLAID_SECRET='your_secret_key'
     export PLAID_PUBLIC_KEY='your_public_key'
+    
+### Note : This process is for the previous version of plaid. In the current version public key doesnt exist. We have link tokens instead. So I am currently in the process of making changes.
 
 After adding all the values just activate the environment:
 
@@ -206,7 +136,6 @@ After setting up all the things you need to migrate the changes, create admin us
 
 Above were the steps for setting up first time. In case you already had set up the project you can start the server in few steps:
 
-    $ ./cloud_sql_proxy -instances=<INSTANCE_CONNECTION_NAME>=tcp:3306
     $ ./ngrok http -host-header=localhost 8000
     $ redis-server
     $ source ./env/bin/activate
