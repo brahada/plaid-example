@@ -1,10 +1,4 @@
-# Images for better Visualization of project
 
-**Signup Page**
-
-![](images/Signup.png)
-
-**Login Page**
 
 # Django Assignment
 
