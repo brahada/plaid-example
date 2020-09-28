@@ -17,3 +17,4 @@ PLAID_PRODUCTS = os.getenv('PLAID_PRODUCTS', 'transactions')
 # PLAID_COUNTRY_CODES is a comma-separated list of countries for which users
 # will be able to select institutions from.
 PLAID_COUNTRY_CODES = os.getenv('PLAID_COUNTRY_CODES', 'US')
+
