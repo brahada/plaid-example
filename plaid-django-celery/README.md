@@ -73,7 +73,7 @@ Let the new virtual environment be `env`. You need to add your secret keys to th
     export PLAID_SECRET='your_secret_key'
     export PLAID_PUBLIC_KEY='your_public_key'
     
-### Note : This process is for the previous version of plaid. In the current version public key doesnt exist. We have link tokens instead. So I am currently in the process of making changes.
+### Note : This process is for the previous version of plaid. In the current version public key doesnt exist. We have link tokens instead. But for the older version plaid is still supported and it works for that.
 
 After adding all the values just activate the environment:
 
